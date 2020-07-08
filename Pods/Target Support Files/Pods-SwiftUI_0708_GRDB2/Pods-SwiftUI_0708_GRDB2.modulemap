@@ -1,0 +1,6 @@
+framework module Pods_SwiftUI_0708_GRDB2 {
+  umbrella header "Pods-SwiftUI_0708_GRDB2-umbrella.h"
+
+  export *
+  module * { export * }
+}

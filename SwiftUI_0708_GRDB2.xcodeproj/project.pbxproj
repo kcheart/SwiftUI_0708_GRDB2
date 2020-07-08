@@ -13,9 +13,13 @@
 		B22282C724B5DF9600202504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22282C624B5DF9600202504 /* Assets.xcassets */; };
 		B22282CA24B5DF9600202504 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22282C924B5DF9600202504 /* Preview Assets.xcassets */; };
 		B22282CD24B5DF9600202504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22282CB24B5DF9600202504 /* LaunchScreen.storyboard */; };
+		EFC4C00CE105CA0F24169720 /* Pods_SwiftUI_0708_GRDB2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C088FD0D8CD04CBC026E8 /* Pods_SwiftUI_0708_GRDB2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73B1A1C819DFB3FF33A26B09 /* Pods-SwiftUI_0708_GRDB2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_0708_GRDB2.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI_0708_GRDB2/Pods-SwiftUI_0708_GRDB2.release.xcconfig"; sourceTree = "<group>"; };
+		7D994463E5EDF3C0C98FDAB8 /* Pods-SwiftUI_0708_GRDB2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_0708_GRDB2.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI_0708_GRDB2/Pods-SwiftUI_0708_GRDB2.debug.xcconfig"; sourceTree = "<group>"; };
+		AB7C088FD0D8CD04CBC026E8 /* Pods_SwiftUI_0708_GRDB2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_0708_GRDB2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22282BD24B5DF9300202504 /* SwiftUI_0708_GRDB2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_0708_GRDB2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22282C024B5DF9300202504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B22282C224B5DF9400202504 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC4C00CE105CA0F24169720 /* Pods_SwiftUI_0708_GRDB2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DC208499065E7BF63A9C3F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C088FD0D8CD04CBC026E8 /* Pods_SwiftUI_0708_GRDB2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		721C5F1886F9AF5F7099EE33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D994463E5EDF3C0C98FDAB8 /* Pods-SwiftUI_0708_GRDB2.debug.xcconfig */,
+				73B1A1C819DFB3FF33A26B09 /* Pods-SwiftUI_0708_GRDB2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B22282B424B5DF9300202504 = {
 			isa = PBXGroup;
 			children = (
 				B22282BF24B5DF9300202504 /* SwiftUI_0708_GRDB2 */,
 				B22282BE24B5DF9300202504 /* Products */,
+				721C5F1886F9AF5F7099EE33 /* Pods */,
+				3DC208499065E7BF63A9C3F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B22282D124B5DF9600202504 /* Build configuration list for PBXNativeTarget "SwiftUI_0708_GRDB2" */;
 			buildPhases = (
+				293D5D15AF2D700EB63E9E86 /* [CP] Check Pods Manifest.lock */,
 				B22282B924B5DF9300202504 /* Sources */,
 				B22282BA24B5DF9300202504 /* Frameworks */,
 				B22282BB24B5DF9300202504 /* Resources */,
+				13266F82536BF82C6EE725B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13266F82536BF82C6EE725B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI_0708_GRDB2/Pods-SwiftUI_0708_GRDB2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI_0708_GRDB2/Pods-SwiftUI_0708_GRDB2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI_0708_GRDB2/Pods-SwiftUI_0708_GRDB2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		293D5D15AF2D700EB63E9E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUI_0708_GRDB2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B22282B924B5DF9300202504 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		B22282D224B5DF9600202504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D994463E5EDF3C0C98FDAB8 /* Pods-SwiftUI_0708_GRDB2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		B22282D324B5DF9600202504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B1A1C819DFB3FF33A26B09 /* Pods-SwiftUI_0708_GRDB2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
