@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		B22282C724B5DF9600202504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22282C624B5DF9600202504 /* Assets.xcassets */; };
 		B22282CA24B5DF9600202504 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22282C924B5DF9600202504 /* Preview Assets.xcassets */; };
 		B22282CD24B5DF9600202504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22282CB24B5DF9600202504 /* LaunchScreen.storyboard */; };
+		B22282D524B5E08D00202504 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22282D424B5E08D00202504 /* DatabaseManager.swift */; };
+		B22282D924B5E33C00202504 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22282D824B5E33C00202504 /* Project.swift */; };
+		B239096024B6A819001E52C3 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B239095F24B6A819001E52C3 /* ProjectListViewModel.swift */; };
 		EFC4C00CE105CA0F24169720 /* Pods_SwiftUI_0708_GRDB2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7C088FD0D8CD04CBC026E8 /* Pods_SwiftUI_0708_GRDB2.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		B22282C924B5DF9600202504 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B22282CC24B5DF9600202504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B22282CE24B5DF9600202504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B22282D424B5E08D00202504 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		B22282D824B5E33C00202504 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		B239095F24B6A819001E52C3 /* ProjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,6 @@
 				7D994463E5EDF3C0C98FDAB8 /* Pods-SwiftUI_0708_GRDB2.debug.xcconfig */,
 				73B1A1C819DFB3FF33A26B09 /* Pods-SwiftUI_0708_GRDB2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +89,8 @@
 				B22282C024B5DF9300202504 /* AppDelegate.swift */,
 				B22282C224B5DF9400202504 /* SceneDelegate.swift */,
 				B22282C424B5DF9400202504 /* ContentView.swift */,
+				B22282D424B5E08D00202504 /* DatabaseManager.swift */,
+				B22282D724B5E31700202504 /* Models */,
 				B22282C624B5DF9600202504 /* Assets.xcassets */,
 				B22282CB24B5DF9600202504 /* LaunchScreen.storyboard */,
 				B22282CE24B5DF9600202504 /* Info.plist */,
@@ -98,6 +105,23 @@
 				B22282C924B5DF9600202504 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B22282D724B5E31700202504 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B22282D824B5E33C00202504 /* Project.swift */,
+				B239095E24B6A7BC001E52C3 /* ViewModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B239095E24B6A7BC001E52C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B239095F24B6A819001E52C3 /* ProjectListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22282D524B5E08D00202504 /* DatabaseManager.swift in Sources */,
 				B22282C124B5DF9300202504 /* AppDelegate.swift in Sources */,
 				B22282C324B5DF9400202504 /* SceneDelegate.swift in Sources */,
+				B22282D924B5E33C00202504 /* Project.swift in Sources */,
+				B239096024B6A819001E52C3 /* ProjectListViewModel.swift in Sources */,
 				B22282C524B5DF9400202504 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
