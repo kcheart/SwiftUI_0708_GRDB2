@@ -54,7 +54,7 @@ class DatabaseManager {
                 t.add(column: "isDraft", .boolean).notNull().defaults(to: true)
             }
 
-//            try db.rename(table: "project", to: "collection")
+            try db.rename(table: "project", to: "collection")
         }
         
         return migrator
